@@ -455,3 +455,12 @@ h2.sec .ar{font-size:13px;color:var(--muted);font-weight:600}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
 }
+
+/* Arabic-first RTL presentation */
+html, body, #root { direction: rtl; }
+body { font-family: var(--font-ar), var(--font); }
+.brand__en { letter-spacing: .04em; }
+.arrival__word, .grad { direction: rtl; }
+.btn .arrow { transform: scaleX(-1); }
+.btn:hover .arrow { transform: scaleX(-1) translateX(4px); }
+.footer__links { flex-direction: row-reverse; }
